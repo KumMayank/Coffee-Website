@@ -1,0 +1,482 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 323 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "D:\\react-projects\\coffee website\\brag-output\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 20,
+    "samples": [
+      1.111,
+      3.333,
+      5.556,
+      7.778,
+      10,
+      12.222,
+      14.444,
+      16.667,
+      18.889
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.111,
+      5.556,
+      10,
+      14.444,
+      18.889
+    ],
+    "checked": 78,
+    "passed": 78
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 42 text elements stay under it for 0.5 s or more, the smallest \"Member Name\" at 15 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Member Name",
+        "selector": "#s4-card > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 683.94,
+          "y": 370.03,
+          "width": 137.24,
+          "height": 20.19
+        },
+        "time": 15.25,
+        "times": [
+          0.375,
+          1.625,
+          1.625,
+          4.125,
+          4.125,
+          4.125,
+          4.125,
+          4.125,
+          4.125,
+          5.375,
+          5.375,
+          5.375,
+          5.375,
+          5.375,
+          5.375,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          9.625,
+          15.25,
+          15.25,
+          15.25,
+          15.25,
+          15.25,
+          15.25,
+          15.25,
+          16.25,
+          16.25
+        ],
+        "fontPx": 15.42,
+        "floorPx": 28,
+        "seconds": 4.75,
+        "elements": [
+          {
+            "selector": "#s4-card > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Member Name",
+            "fontPx": 15.42,
+            "time": 15.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#s4-card > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "GOLD PATRON",
+            "fontPx": 17.34,
+            "time": 15.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#s4-card > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Available Balance:",
+            "fontPx": 17.34,
+            "time": 15.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#s4-card > div:nth-of-type(3) > span:nth-of-type(1) > strong:nth-of-type(1)",
+            "text": "480 PTS",
+            "fontPx": 17.34,
+            "time": 15.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#s4-card > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "Order #CWG-ORD-9821 Confirmed",
+            "fontPx": 17.34,
+            "time": 15.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "div.glass-card.drink-spotlight-card > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "24-Hour Cascading Head",
+            "fontPx": 18,
+            "time": 5.375,
+            "seconds": 4.125
+          },
+          {
+            "selector": "div.glass-card.drink-spotlight-card > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Dark Cacao",
+            "fontPx": 18,
+            "time": 5.375,
+            "seconds": 4.125
+          },
+          {
+            "selector": "div.glass-card.drink-spotlight-card > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Black Cherry",
+            "fontPx": 18,
+            "time": 5.375,
+            "seconds": 4.125
+          },
+          {
+            "selector": "div.glass-card.drink-spotlight-card > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(3)",
+            "text": "Molasses",
+            "fontPx": 18,
+            "time": 5.375,
+            "seconds": 4.125
+          },
+          {
+            "selector": "#s3-content > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Flagship Extraction",
+            "fontPx": 18,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "div.glass-card > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "1. Cup Size",
+            "fontPx": 18,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#s3-content > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "2. Milk Emulsion",
+            "fontPx": 18,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#s3-content > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "3. Pressure Extra",
+            "fontPx": 18,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#s4-brand > p:nth-of-type(2)",
+            "text": "Flagship Sanctuaries in SoHo NYC • Mayfair London • Ginza Tokyo",
+            "fontPx": 18,
+            "time": 16.25,
+            "seconds": 3.75
+          },
+          {
+            "selector": "#s4-card > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(1)",
+            "text": "ID: CWG-8829-GOLD",
+            "fontPx": 19.27,
+            "time": 15.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#col-espresso > span:nth-of-type(1)",
+            "text": "Espresso",
+            "fontPx": 19.61,
+            "time": 4.125,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#col-flatwhite > span:nth-of-type(1)",
+            "text": "Flat White",
+            "fontPx": 19.61,
+            "time": 4.125,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#col-cinnamon > span:nth-of-type(1)",
+            "text": "Cinnamon",
+            "fontPx": 19.61,
+            "time": 4.125,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#col-nitro > span:nth-of-type(1)",
+            "text": "Nitro Brew",
+            "fontPx": 19.61,
+            "time": 4.125,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#col-bag > span:nth-of-type(1)",
+            "text": "Origins Bag",
+            "fontPx": 19.61,
+            "time": 4.125,
+            "seconds": 5.375
+          },
+          {
+            "selector": "div.glass-card.drink-spotlight-card > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "Daily Handcrafted Batch",
+            "fontPx": 20,
+            "time": 5.375,
+            "seconds": 4.125
+          },
+          {
+            "selector": "#s3-content > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Terroir Elevation:",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "div.glass-card > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "Huila, Colombia (1,850m)",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#opt-s > span:nth-of-type(1)",
+            "text": "Piccolo 8oz",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#opt-m > span:nth-of-type(1)",
+            "text": "Regular 12oz",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#opt-l > span:nth-of-type(1)",
+            "text": "Grande 16oz (+$1.20)",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#opt-oat > span:nth-of-type(1)",
+            "text": "Oat Milk Artisan",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#opt-oat > span:nth-of-type(2)",
+            "text": "+$0.50",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#opt-whole > span:nth-of-type(1)",
+            "text": "Guernsey Whole",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#opt-whole > span:nth-of-type(2)",
+            "text": "+0.00",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#opt-shot > span:nth-of-type(1)",
+            "text": "+9.2 Bar Ristretto Shot",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#opt-shot > span:nth-of-type(2)",
+            "text": "+$0.90",
+            "fontPx": 20,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#btn-add-order",
+            "text": "✓ ADD TO ORDER • $7.40",
+            "fontPx": 21.56,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#s2-content > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Interactive 3D Barista Bar",
+            "fontPx": 21.58,
+            "time": 4.125,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#s1-pill > span:nth-of-type(2)",
+            "text": "Artisan Single-Origin 3D Sanctuary",
+            "fontPx": 22,
+            "time": 0.375,
+            "seconds": 3.625
+          },
+          {
+            "selector": "#s1-metrics > span:nth-of-type(1)",
+            "text": "2,200M VOLCANIC CLOUD FORESTS",
+            "fontPx": 22,
+            "time": 1.625,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#s1-metrics > span:nth-of-type(3)",
+            "text": "9.2 BAR EXTRACTION",
+            "fontPx": 22,
+            "time": 1.625,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#s3-content > div:nth-of-type(1) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Live Formulation:",
+            "fontPx": 22,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "div.glass-card > p:nth-of-type(1)",
+            "text": "Single-origin double extraction pulled at 9.2 bars with a velvety crema.",
+            "fontPx": 24,
+            "time": 9.625,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#s4-card > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "[CODE WITH GANDHI]",
+            "fontPx": 25.05,
+            "time": 15.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "div.glass-card.drink-spotlight-card > div:nth-of-type(2) > p:nth-of-type(1)",
+            "text": "Slow-steeped for 24 hours in glacial water and charged with pure nitrogen.",
+            "fontPx": 26,
+            "time": 5.375,
+            "seconds": 4.125
+          },
+          {
+            "selector": "#s4-brand > p:nth-of-type(1)",
+            "text": "Coffee as Modern Architecture",
+            "fontPx": 26,
+            "time": 16.25,
+            "seconds": 3.75
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 160
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
